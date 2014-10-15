@@ -56,7 +56,7 @@ class BaseController extends SymfonyController {
 		    }
 
 		    //for unpublished posts and posts returned to draft, allow draft status
-	        $queryArgs['post_status'] = array('draft', 'publish');
+	        $queryArgs['post_status'] = array('draft', 'publish', 'future');
 	    }
 
         $query = $this->query($queryArgs);
